@@ -1,0 +1,215 @@
+*{
+    font-family: sans-serif;
+    text-shadow: 0px 0px 3px black;
+    color: white;
+}
+body{
+    background-color: rgb(225, 225, 225);
+}
+
+.css-selector {
+    background: linear-gradient(270deg, #e8e8e8, #d9d9d9);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 2s ease infinite;
+    -moz-animation: AnimationName 2s ease infinite;
+    animation: AnimationName 2s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+main{
+    width: 100%;
+}
+.note-container{
+    border: 1px solid lightgrey;
+    width: 85%;
+    min-height: 180px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 1px 1px 15px 2px #959595, -1px -1px 15px 2px #ffffff;
+}
+
+section.note-container{
+    width: 40%;
+    height: 275px;
+}
+small{
+    font-size: 9px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+h5{
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background: linear-gradient(rgba(255, 255, 255, 0.235), rgba(255,255,255,0.150));
+}
+input, button{
+    border: 1px solid lightgrey;
+}
+
+button:active{
+    border: 1px solid rgba(0, 0, 0, 0.642);
+}
+
+.note{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 180px;
+    padding: 5px;
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.333);
+
+    background: linear-gradient(270deg, #f89a9a, #7595ff);
+    background-size: 400% 400%;
+
+    -webkit-animation: Animation 4s ease infinite;
+    -moz-animation: Animation 4s ease infinite;
+    animation: Animation 4s ease infinite;
+}
+
+.new-note{
+    text-align: center;
+    margin: 5px 2px;
+    width: 48%;
+    padding: 5px;
+    box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.333);
+
+    background: linear-gradient(270deg, #f89a9a, #a886ff);
+    background-size: 400% 400%;
+
+    -webkit-animation: Animation 4s ease infinite;
+    -moz-animation: Animation 4s ease infinite;
+    animation: Animation 4s ease infinite;
+}
+.new-note h5{
+    word-wrap: break-word;
+}
+.svg{
+    width: 100%;
+    margin: 30%;
+    filter: invert(95%) drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.7));
+}
+.trash{
+    box-shadow: 1px 1px 15px 2px #959595, -1px -1px 15px 2px #ffffff;
+    border-radius: 25px;
+    border: 1px solid lightgrey;
+    width: 100%;
+}
+.drag{
+    opacity: .5;
+}
+.new-note{
+    cursor: grab;
+}
+
+@-webkit-keyframes Animation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes Animation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes Animation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+h1{
+    font-weight: 700;
+    font-size: 45px;
+}
+.p-title{
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 25px;
+    color: white;
+}
+label{
+    color: white;
+}
+button{
+    border-radius: 5px;
+    border: none;
+    padding: 5px 15px;
+    margin: 10px 0;
+    font-size: 15px;
+    font-weight: 700;
+    background: white;
+    color: white;
+    box-shadow: 2px 2px 10px #bebebe, -2px -2px 10px #ffffff;
+}
+
+button:hover{
+    cursor: pointer;
+}
+button:active{
+    border: none;
+    box-shadow:  inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+}
+.bottom-container{
+    margin: 0 50px;
+    width: 100%;
+}
+
+input{
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 10px #bebebe, -2px -2px 10px #ffffff;
+}
+
+input:hover{
+    cursor: pointer;
+}
+input:focus{
+    outline: none;
+    box-shadow:  inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+}
+input:active{
+    outline: none;
+    border: none;
+    box-shadow:  inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+}
+
+
+@media screen and (max-width: 1050px)
+{
+    .top-container{
+        flex-direction: column!important;
+        height: 500px!important;
+        width: 400px!important;
+        margin: 0;
+    }
+    .bottom-container{
+        flex-direction: column!important;
+        width: 450px!important;
+    }
+}
+
+@media screen and (max-width: 400px)
+{
+    .top-container{
+        width: 95%!important;
+    }
+    .bottom-container{
+        width: 95%!important;
+    }
+}

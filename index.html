@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KANBAN JS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style/style.css">
+</head>
+<body class="css-selector">
+    <main class="d-flex align-items-center justify-content-center flex-column">
+        <h1 class="text-light">KANBAN</h1>
+
+        <section class="d-flex flex-row justify-content-around align-items-center note-container top-container">
+
+            <article class="d-flex flex-column justify-content-center align-items-center">
+                <p class="p-title">ADD NOTES</p>
+                <div class="note d-flex flex-column justify-content-center align-items-center">
+                    <label for="">Title of note</label>
+                    <input type="text" name="" id="title-note" required>
+                    <label for="">Content of note</label>
+                    <input type="text" name="" id="content-note" required>
+                </div>
+                <button class="my-2 valid-btn">VALIDATION</button>
+            </article>
+
+            <article class="d-flex flex-column justify-content-center align-items-center">
+                <p class="p-title">Delete Notes</p>
+                <div class="trash d-flex justify-content-center align-items-center">
+                    <img class="svg" src="assets/img/trash.svg">
+                </div>
+            </article>
+
+        </section>
+
+        <section class="d-flex justify-content-center align-items-center bottom-container">
+            <article class="d-flex flex-column w-100 justify-content-center align-items-center">
+                <p class="text-light text-center p-title">TO DO</p>
+                <div class="note-container to-do drop d-flex flex-wrap"></div>
+            </article>
+            <article class="d-flex flex-column mx-3 w-100 justify-content-center align-items-center">
+                <p class="text-light text-center p-title">DONE</p>
+                <div class="note-container done drop d-flex flex-wrap"></div>
+            </article>
+            <article class="d-flex flex-column w-100 justify-content-center align-items-center">
+                <p class="text-light text-center p-title">VERIFIED</p>
+                <div class="note-container verified drop d-flex flex-wrap">
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
